@@ -1,3 +1,99 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-Thin.woff2);
+    src: url(../fonts/Montserrat-Thin.woff);
+    line-height: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-ExtraLight.woff2);
+    src: url(../fonts/Montserrat-Light.woff);
+    line-height: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-Regular.woff2);
+    src: url(../fonts/Montserrat-Regular.woff);
+    line-height: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-Medium.woff2);
+    src: url(../fonts/Montserrat-Medium.woff);
+    line-height: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-SemiBold.woff2);
+    src: url(../fonts/Montserrat-SemiBold.woff);
+    line-height: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-Bold.woff2);
+    src: url(../fonts/Montserrat-Bold.woff);
+    line-height: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-ExtraBold.woff2);
+    src: url(../fonts/Montserrat-ExtraBold.woff);
+    line-height: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat");
+    src: url(../fonts/Montserrat-Black.woff2);
+    src: url(../fonts/Montserrat-Black.woff);
+    line-height: normal;
+    font-weight: 900;
+}
+:root {
+    --primary-color_button_lincs: #ff9900;
+    --primary-color_button_lincs_after: #e1670e;
+    --primary-color_white: #ffffff;
+    --primay-color-light_gray: #cacaca;
+    --primay-color-gray: #333333;
+    --primay-color-gray-1: #414141;
+    --primay-color-gray-2: #222222;
+    --primay-color-gray-3: #666666;
+    --primay-color-black: #000000;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
 body {
     display: grid;
     grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
@@ -6,18 +102,182 @@ body {
                          "footer footer footer"
 }
 
-.header {
-    width: 300px;
-    grid-area: header;
-    background-color: maroon;
+.container {
+    min-width: 1920px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    position: relative;
 }
+
+.header {
+    height: 100px;
+    width: 100%;
+    grid-area: header;
+    background-color: white;
+}
+
+.header-container {
+    width: 100%;
+    height: 101px;
+    top: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--primary-color_white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: none;
+}
+
+.top-logo {
+    margin-top: 2px;
+}
+
+.top_logo_img {
+    width: 120px;
+    margin-left: 13px;
+}
+
+.nav {
+    /*padding-left: 729px;*/
+}
+
+.nav-list {
+    display: flex;
+    padding-top: 5px;
+}
+
+.nav-linc {
+    margin-right: 85.5px;
+    padding: 0px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
+}
+
+.nav-linc:hover {
+    border-bottom: 2px solid;
+    border-color: var(--primay-color-gray);
+}
+
+.nav-linc:active {
+    color: var(--primary-color_button_lincs_after);
+    border-color: var(--primary-color_button_lincs_after);
+}
+
+.nav-linc:focus {
+    border-bottom: 2px solid;
+    border-color: var(--primary-color_button_lincs);
+}
+
+.nav-linc-last {
+    margin-right: 66px;
+    padding-top: 3.5px;
+    padding: 0px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
+}
+
+.nav-linc-last:hover {
+    border-bottom: 2px solid;
+    border-color: var(--primay-color-gray);
+}
+
+.nav-linc-last:active {
+    color: var(--primary-color_button_lincs_after);
+}
+
+.nav-linc-last:focus {
+    border-bottom: 2px solid;
+    border-color: var(--primary-color_button_lincs);
+}
+
+.adres_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
+}
+
 .main {
-    width: 300px;
+    height: 500px;
+    width: 100%;
     grid-area: main;
     background-color: antiquewhite;
 }
+
+.swiper-container {
+    width: 1920px;
+    height: 620px;
+}
+
+.title-banner {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 620px;
+    background-image : url("https://assets.cnhindustrial.com/caseih/APAC/APACASSETS/News/2021/russia-6150%20(1).jpg?width=1280&height=562");
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-text-top {
+    width: 60%;
+    margin: 0px;
+    margin-right: 0px;
+    padding-left: 77.58px;
+    padding-top: 103px;
+    padding-bottom: 19px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70.3742px;
+    line-height: 86px;
+    position: relative;
+    z-index: 2;
+    color: var(--primay-color-gray);
+}
+
+.title-text-low {
+    width: 55%;
+    margin: 0px;
+    padding-left: 77.58px;
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.4581px;
+    line-height: 30px;
+    color: var(--primary-color_white);
+}
+
+
+
+
+
+
+
 .footer {
-    width: 300px;
+    height: 500px;
+    width: 100%;
     grid-area: footer;
     background-color: darkblue;
 }
