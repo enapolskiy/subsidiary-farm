@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer"
+}
+
+.header {
+    width: 300px;
+    grid-area: header;
+    background-color: maroon;
+}
+.main {
+    width: 300px;
+    grid-area: main;
+    background-color: antiquewhite;
+}
+.footer {
+    width: 300px;
+    grid-area: footer;
+    background-color: darkblue;
+}
