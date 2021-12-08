@@ -95,6 +95,10 @@ ul {
 }
 
 body {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
     grid-template-areas: "header header header"
@@ -113,11 +117,13 @@ body {
     height: 100px;
     width: 100%;
     grid-area: header;
+    position: fixed;
+    z-index: 1000;
     background-color: white;
 }
 
 .header-container {
-    width: 100%;
+    min-width: 100%;
     height: 101px;
     top: 0px;
     display: inline-flex;
@@ -218,6 +224,7 @@ body {
 .main {
     height: 500px;
     width: 100%;
+    margin-top: 101px;
     grid-area: main;
     background-color: antiquewhite;
 }
@@ -279,5 +286,5 @@ body {
     height: 500px;
     width: 100%;
     grid-area: footer;
-    background-color: darkblue;
+    background-color: white;
 }
