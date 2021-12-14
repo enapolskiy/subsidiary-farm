@@ -110,7 +110,7 @@ body {
     padding: 0px 0px;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
     /*grid-template-columns: repeat(3, 1fr);*/
     grid-template-areas: "main main main"
@@ -294,16 +294,14 @@ body {
 .description_lists {
     width: 100%;
     height: 825px;
-    display:grid;
     grid-area: description;
-
-
+    display: flex;
+    justify-content: space-around;
     background-color: #ff9900;
-
 }
 
 .description_list_1 {
-    grid-area: description1;
+
     width: 300px;
     height: 400px;
     background-image: url(../IMG/2.jpg);
@@ -311,7 +309,7 @@ body {
     border: 1px solid  #000000;
 }
 .description_list_2 {
-    grid-area: description2;
+
     width: 300px;
     height: 400px;
     background-image: url(../IMG/2.jpg);
@@ -319,7 +317,7 @@ body {
     border: 1px solid  #000000;
 }
 .description_list_3 {
-    grid-area: description3;
+
     width: 300px;
     height: 400px;
     background-image: url(../IMG/2.jpg);
