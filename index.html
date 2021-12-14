@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Podsobnoe</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -46,35 +51,87 @@
     </header>
 
     <div class="main">
-        <section class="title">
+<!--        <section class="title">-->
 
-            <div class="swiper-container">
-                <div class="title-banner">
-                    <h1 class="title-text-top">ООО "Подсобное"</h1>
-                    <p class="title-text-low">
-                        <!--                        Есть над чем задуматься: базовые сценарии поведения пользователей-->
-                        <!--                        и по сей день остаются уделом проектантов-->
-                    </p>
-                </div>
+<!--            <div class="swiper-container">-->
+<!--                <div class="title-banner">-->
+<!--                    <h1 class="title-text-top">ООО "Подсобное"</h1>-->
+<!--                    <p class="title-text-low">-->
+<!--                        &lt;!&ndash;                        Есть над чем задуматься: базовые сценарии поведения пользователей&ndash;&gt;-->
+<!--                        &lt;!&ndash;                        и по сей день остаются уделом проектантов&ndash;&gt;-->
+<!--                    </p>-->
+<!--                </div>-->
 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-1">
-                        <img class="slide_1_img" src="./IMG/big.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide slide-2"></div>
-                    <div class="swiper-slide slide-3"></div>
-                </div>
+<!--                <div class="swiper-wrapper">-->
+<!--                    <div class="swiper-slide slide-1"></div>-->
+<!--                    <div class="swiper-slide slide-2"></div>-->
+<!--                    <div class="swiper-slide slide-3"></div>-->
 
-                <button class="swiper-button-prev">
-                </button>
-                <button class="swiper-button-next">
-                </button>
 
+<!--                </div>-->
 <!--                <a class="swiper-pagination" href=""></a>-->
+<!--                <button  class="swiper-button-prev">-->
+<!--                </button>-->
+<!--                <button class="swiper-button-next">-->
+<!--                </button>-->
+
+
+
+
+<!--&lt;!&ndash;                <a class="swiper-pagination" href=""></a>&ndash;&gt;-->
+
+<!--            </div>-->
+<!--            <script>-->
+<!--                const swiper = new Swiper(".swiper-container", {-->
+<!--                    direction: "horizontal",-->
+<!--                    loop: true,-->
+<!--                    pagination: {-->
+<!--                        el: ".swiper-pagination",-->
+<!--                        clickable: true,-->
+<!--                    },-->
+<!--                    navigation: {-->
+<!--                        nextEl: ".swiper-button-next",-->
+<!--                        prevEl: ".swiper-button-prev",-->
+<!--                    },-->
+<!--                });-->
+<!--            </script>-->
+<!--        </section>-->
+
+
+        <div class="swiper mySwiper">
+            <span>
+                <h1 class="title-text-top">ООО "Подсобное"</h1>
+            </span>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="swiper_img1" src="./IMG/big.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper_img2" src="./IMG/ferm.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper_img3" src="./IMG/milk2.jpg">
+                </div>
 
             </div>
-        </section>
+            <div class="swiper-pagination"></div>
+        </div>
 
+        <script>
+            let swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 9500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+            });
+        </script>
 
     </div>
     <div class="description_lists">
