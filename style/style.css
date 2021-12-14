@@ -234,7 +234,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-area: main;
-    background-color: darkgoldenrod;
 }
 
 .swiper-container {
@@ -266,7 +265,7 @@ body {
 .swiper_img2 {
     width: 100%;
 
-    background-image: url(../IMG/ferm.jpg);
+    background-image: url(../IMG/ferm2.jpg);
     background-repeat: no-repeat;
 }
 
@@ -315,12 +314,12 @@ body {
 
 
 .title-text-top {
-    width: 60%;
-    margin: 0px;
+    width: 80%;
+    /*margin: 0px;*/
     margin-right: 0px;
     padding-left: 77.58px;
-    padding-top: 103px;
-    padding-bottom: 19px;
+    padding-top: 300px;
+    /*padding-bottom: 19px;*/
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
@@ -328,18 +327,21 @@ body {
     line-height: 86px;
     position: absolute;
     z-index: 20;
-    color: var(--primay-color-gray);
+    color: var(--primary-color_white);
+    text-shadow: 3px 5px 3px #414141;
+
 }
 
 
 
 
-
+.description {
+    grid-area: description;
+}
 
 .description_lists {
-    width: 100%;
-    height: 825px;
-    grid-area: description;
+width: 100%;
+    height: 480px;
     display: flex;
     justify-content: space-around;
 
@@ -390,11 +392,34 @@ body {
     color: var(--primay-color-gray);
 }
 
+.about_us {
+    width: 1126px;
+    height: 300px;
+
+
+    /*background-color: #414141;*/
+}
+
+.about_us_content {
+    margin-left: 93px;
+    border-top: 1px solid #414141;
+}
+
+.about_us_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
+}
+
+
 .news {
     grid-area: news;
     grid-template-rows: repeat(3, min-content) 1fr;
     grid-template-columns: 100%;
-    background-color: aquamarine;
+    background-color: #6fbfd8;
 }
 
 
