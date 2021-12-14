@@ -229,7 +229,7 @@ body {
 }
 
 .main {
-    height: 620px;
+    height: 950px;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -237,25 +237,25 @@ body {
     background-color: darkgoldenrod;
 }
 
-/*.swiper-container {*/
-/*    width: 1920px;*/
-/*    height: 620px;*/
-/*}*/
+.swiper-container {
+    width: 1920px;
+    height: 950px;
+}
 
 .title-banner {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 620px;
+    height: 980px;
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
 }
 
 .slide_1_img {
     width: 100%;
-    height: 620px;
+    height: 950px;
 }
 
 .title-text-top {
@@ -297,37 +297,52 @@ body {
     grid-area: description;
     display: flex;
     justify-content: space-around;
-    background-color: #ff9900;
+
+
 }
 
-.description_list_1 {
+.description_list {
 
     width: 300px;
-    height: 400px;
-    background-image: url(../IMG/2.jpg);
-    background-repeat: no-repeat;
-    border: 1px solid  #000000;
+    height: 276px;
+    border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
-.description_list_2 {
 
+
+
+.description_list_1_img{
     width: 300px;
-    height: 400px;
-    background-image: url(../IMG/2.jpg);
+    height: 276px;
+    background-image: url(../IMG/Cow.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    border: 1px solid  #000000;
 }
-.description_list_3 {
 
+.description_list_2_img{
     width: 300px;
-    height: 400px;
-    background-image: url(../IMG/2.jpg);
+    height: 276px;
+    background-image: url(../IMG/kolos3.png);
+    background-size: 80%;
     background-repeat: no-repeat;
-    border: 1px solid  #000000;
 }
 
-.description_img {
-    width: 30%;
+.description_list_3_img{
+    width: 300px;
+    height: 276px;
+    background-image: url(../IMG/milk.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
 
+.description_text {
+    margin-top: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
 }
 
 .news {
