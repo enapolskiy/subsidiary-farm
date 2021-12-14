@@ -69,6 +69,7 @@
     line-height: normal;
     font-weight: 900;
 }
+
 :root {
     --primary-color_button_lincs: #ff9900;
     --primary-color_button_lincs_after: #e1670e;
@@ -99,18 +100,24 @@ body {
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    display: grid;
-    grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer"
+
 }
 
 .container {
     min-width: 1920px;
+    height: 2000px;
     margin: 0 auto;
     padding: 0px 0px;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-areas: "main main main"
+                         "header header header"
+                         "description description news"
+                         "footer footer footer"
+;
 }
 
 .header {
@@ -222,28 +229,33 @@ body {
 }
 
 .main {
-    height: 500px;
+    height: 620px;
     width: 100%;
-    margin-top: 101px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     grid-area: main;
-    background-color: antiquewhite;
+    background-color: darkgoldenrod;
 }
 
-.swiper-container {
-    width: 1920px;
-    height: 620px;
-}
+/*.swiper-container {*/
+/*    width: 1920px;*/
+/*    height: 620px;*/
+/*}*/
 
 .title-banner {
     position: absolute;
     z-index: 10;
     width: 100%;
     height: 620px;
-    background-image : url("https://assets.cnhindustrial.com/caseih/APAC/APACASSETS/News/2021/russia-6150%20(1).jpg?width=1280&height=562");
-    position:absolute;
+    position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.slide_1_img {
+    width: 100%;
+    height: 620px;
 }
 
 .title-text-top {
@@ -263,28 +275,75 @@ body {
     color: var(--primay-color-gray);
 }
 
-.title-text-low {
-    width: 55%;
-    margin: 0px;
-    padding-left: 77.58px;
-    position: absolute;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23.4581px;
-    line-height: 30px;
-    color: var(--primary-color_white);
+/*.title-text-low {*/
+/*    width: 55%;*/
+/*    margin: 0px;*/
+/*    padding-left: 77.58px;*/
+/*    position: absolute;*/
+/*    font-family: Montserrat;*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    font-size: 23.4581px;*/
+/*    line-height: 30px;*/
+/*    color: var(--primary-color_white);*/
+/*}*/
+
+
+
+
+.description_lists {
+    width: 100%;
+    height: 825px;
+    display:grid;
+    grid-area: description;
+
+
+    background-color: #ff9900;
+
 }
 
+.description_list_1 {
+    grid-area: description1;
+    width: 300px;
+    height: 400px;
+    background-image: url(../IMG/2.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid  #000000;
+}
+.description_list_2 {
+    grid-area: description2;
+    width: 300px;
+    height: 400px;
+    background-image: url(../IMG/2.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid  #000000;
+}
+.description_list_3 {
+    grid-area: description3;
+    width: 300px;
+    height: 400px;
+    background-image: url(../IMG/2.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid  #000000;
+}
 
+.description_img {
+    width: 30%;
 
+}
 
-
+.news {
+    grid-area: news;
+    grid-template-rows: repeat(3, min-content) 1fr;
+    grid-template-columns: 100%;
+    background-color: aquamarine;
+}
 
 
 .footer {
     height: 500px;
     width: 100%;
     grid-area: footer;
-    background-color: white;
+    background-color: #666666;
 }
+
