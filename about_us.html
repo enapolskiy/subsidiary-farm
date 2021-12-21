@@ -9,43 +9,48 @@
 
 </head>
 <body>
-<div class="container_about_us">
-    <header class="header">
-        <div class="header-container">
-            <a tabindex="-1" class="top_logo" href="./index.html" aria-label="Логотип">
-                <img class="top_logo_img" src="./IMG/top_logo.jpg" alt=""/>
-            </a>
+<header class="header">
+    <div class="header-container">
+        <a tabindex="-1" class="top_logo" href="index.html" aria-label="Логотип">
+            <img class="top_logo_img" src="./IMG/top_logo.jpg" alt=""/>
+        </a>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-item-text nav-linc" href="" aria-label="Секция О нас">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-text nav-linc" href="" aria-label="Секция Проекты">Проекты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-text nav-linc" href="" aria-label="Секция Этапы">Этапы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item-text nav-linc" href="" aria-label="Секция Отзывы">Отзывы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-linc-last" href="" aria-label="Секция Контакты">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="addres_container">
-                <div class="addres_block">
-                    <p class="adres_text">8-38244-22-222
-                        <br>
-                        ул.Кирова 40. Кожевниково
-                        <br>
-                    </p>
-                </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-item-text nav-linc" href="about_us.html" aria-label="Секция О нас">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-text nav-linc" href="index.html" aria-label="Секция Проекты">Проекты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-text nav-linc" href="" aria-label="Секция Этапы">Этапы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-text nav-linc" href="" aria-label="Секция Отзывы">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-linc-last" href="" aria-label="Секция Контакты">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="addres_container">
+            <div class="addres_block">
+                <p class="adres_text">8-38244-22-222
+                    <br>
+                    ул.Кирова 40. Кожевниково
+                    <br>
+                </p>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+
+<div class="container_about_us">
+    <div id="header.html"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <div data-include="header.html"></div>
 
 <div class="about_us_content">
     <h2 class="about_us_title">ООО "Подсобное"</h2>
@@ -106,42 +111,8 @@
 
     </div>
 
-<footer class="footer">
-    <div id="myMap1" style="width: 1270px; height: 460px; padding: 10px;">
+<footer class="about_us_footer">
 
-        <script type="text/javascript">
-            ymaps.ready(init);
-            function init() {
-                var myMap = new ymaps.Map("myMap1", {
-                    center: [56.2508438273274, 83.96111231234171],
-                    zoom: 16,
-                    controls: [],
-                });
-
-                var myGeoObject = new ymaps.GeoObject({
-                    geometry: {
-                        type: "Point", // тип геометрии - точка
-                        coordinates: [56.25278347370071,83.96374624159435], // координаты точки
-                    },
-                });
-
-                var myPlacemark = new ymaps.Placemark(
-                    [48.872185, 2.354215],
-                    {},
-                    {
-                        iconLayout: "default#image",
-                        iconImageHref: "img/Subtract.png",
-                        iconImageSize: [30, 42],
-                        iconImageOffset: [-3, -42],
-                    }
-                );
-
-                myMap.geoObjects.add(myGeoObject);
-                myMap.geoObjects.add(myPlacemark);
-            }
-        </script>
-
-    </div>
     <div class="footer_right_content">
         <img src="IMG/ооо2.png" width="120px";/>
     </div>
