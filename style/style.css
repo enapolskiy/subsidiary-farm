@@ -123,12 +123,24 @@ container_about_us {
     height: 100px;
     width: 100%;
     margin-top: -100px;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 1000;
     background-color: white;
 }
 
+
 .header-container {
+    min-width: 100%;
+    height: 101px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--primary-color_white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about_us_header_container {
     min-width: 100%;
     height: 101px;
     top: 0px;
@@ -228,6 +240,19 @@ container_about_us {
     line-height: 22px;
     color: var(--primay-color-gray);
 }
+.toMain {
+
+}
+.toMain_button {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primay-color-gray);
+    cursor: pointer;
+}
 
 .main {
     height: 850px;
@@ -243,22 +268,22 @@ container_about_us {
 .swiper_img1 {
     width: 100%;
 
-    background-image: url(../IMG/big.jpg);
-    background-repeat: no-repeat;
+    /*background-image: url(../IMG/big.jpg);*/
+    /*background-repeat: no-repeat;*/
 }
 
 .swiper_img2 {
     width: 100%;
 
-    background-image: url(../IMG/ferm2.jpg);
-    background-repeat: no-repeat;
+    /*background-image: url(../IMG/ferm2.jpg);*/
+    /*background-repeat: no-repeat;*/
 }
 
 .swiper_img3 {
     width: 100%;
 
-    background-image: url(../IMG/milk2.jpg);
-    background-repeat: no-repeat;
+    /*background-image: url(../IMG/milk2.jpg);*/
+    /*background-repeat: no-repeat;*/
 }
 
 
@@ -470,7 +495,11 @@ background-image: url("../IMG/kowI.jpg");
 
 }
 
-
+.purchase_block {
+    max-width: 986px;
+    margin-left: 140px;
+    background-color: #ff9900;
+}
 
 
 
@@ -492,7 +521,13 @@ background-image: url("../IMG/kowI.jpg");
     background-color: #666666;
 }
 
+.footer_contacts_list {
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
 .footer_contacts_text {
+    padding-top: 15px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
