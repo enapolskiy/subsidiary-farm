@@ -371,11 +371,18 @@ container_about_us {
     font-size: 50px;
     line-height: 86px;
     text-shadow: 3px 5px 3px #414141;
+    opacity: 1;
+
+}
+
+.accordion label:hover {
+    opacity: 0.6;
 }
 
 
 
 .accordion_label1{
+    opacity: 1;
     background-image: url("../IMG/jivotnovodstvo.png");
     background-size: 90%;
     background-repeat: no-repeat;
@@ -398,7 +405,6 @@ container_about_us {
 .accordion .content{
 
     display: none;
-
 }
 
 
@@ -502,7 +508,54 @@ background-image: url("../IMG/kowI.jpg");
 }
 
 
+.gallery {
+    margin-top: 40px;
+display: grid;
+justify-content: center;
+}
 
+#largeImg {
+    border: solid 1px #ccc;
+    width: 1050px;
+    height: 692px;
+    padding: 5px;
+  }
+  
+  #thumbs a {
+    border: solid 1px #ccc;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+  }
+  
+  #thumbs a:hover {
+    border-color: #FF9900;
+  }
+
+  .gallery_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_small {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #thumbs li {
+    list-style: none;
+  }
+  
+  #thumbs {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  
 
 .footer {
     height: 500px;
